@@ -10,3 +10,5 @@ function bruh() {
     ul.appendChild(li);
     i++;
 }
+
+console.log("ZANGISANGISANGIAGNAI");
