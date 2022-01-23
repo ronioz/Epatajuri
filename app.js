@@ -1,6 +1,6 @@
 const ul = document.querySelector(".con .mainUl");
 
-var cnt = 0;
+var i = 0;
 
 let database = [];
 
@@ -14,10 +14,14 @@ const addData = (ev) =>{
         date : document.getElementById("mainInput").value,
     }
     database.push(data);
-    fs.writeFile('database.json',JSON.stringify(database),finished);
+    localStorage.setItem('databaseList' , JSON.stringify(database));
     i++;
+    ul.innerHTML += i + ". " + document.getElementById("mainInput").value + "<br>";
     if(i == 10){
+        database = [];
         localStorage.clear();
+        i = 0;
+        ul.innerHTML = " ";
     }
 }
 document.addEventListener('DOMContentLoaded',()=>{
