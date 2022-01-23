@@ -67,3 +67,12 @@
     cursor: pointer;
     color: #cc2b5e;
 }
+
+::placeholder {
+    color: #cc2b5e;
+    opacity: 1; 
+}
+
+.con #mainInput:focus {
+    outline: none;
+}
