@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
 }
 
 .bg {
@@ -23,17 +24,16 @@
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px rgb(63, 0, 0);
 }
 
 .con p {
-    font-family: sans-serif;
     color: #cc2b5e;
     font-size: 36px;
 }
 
 .con .mainUl {
     font-size: 24px;
-    font-family: sans-serif;
 }
 
 .con .mainUl li {
