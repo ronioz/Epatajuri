@@ -9,6 +9,7 @@ const addData = (ev) =>{
         console.error(error)
         return;
     }
+
     ev.preventDefault();
     let data = {
         date : document.getElementById("mainInput").value,
@@ -21,9 +22,18 @@ const addData = (ev) =>{
         database = [];
         localStorage.clear();
         i = 0;
-        ul.innerHTML = " ";
+        ul.innerHTML = "";
     }
 }
+
+function myFunc = (ev) =>{
+    
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+    document.getElementById("bttn").addEventListener('click',myFunc);
+})
+
 document.addEventListener('DOMContentLoaded',()=>{
     document.getElementById("btn").addEventListener('click',addData);
 });
