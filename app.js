@@ -1,6 +1,6 @@
 const ul = document.querySelector(".con .mainUl");
 
-var cnt=0;
+var cnt = 0;
 
 let database = [];
 
