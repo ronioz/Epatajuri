@@ -1,5 +1,6 @@
 const ul = document.querySelector(".con .mainUl");
 
+var cnt=0;
 
 let database = [];
 
@@ -9,8 +10,8 @@ const addData = (ev) =>{
         date : document.getElementById("mainInput").value,
     }
     database.push(data);
-    document.forms[0].reset();
     localStorage.setItem('databaseList',JSON.stringify(database));
+    i++;
 }
 document.addEventListener('DOMContentLoaded',()=>{
     document.getElementById("btn").addEventListener('click',addData);
