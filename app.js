@@ -12,6 +12,9 @@ const addData = (ev) =>{
     database.push(data);
     localStorage.setItem('databaseList',JSON.stringify(database));
     i++;
+    if(i == 10){
+        localStorage.clear();
+    }
 }
 document.addEventListener('DOMContentLoaded',()=>{
     document.getElementById("btn").addEventListener('click',addData);
