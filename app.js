@@ -1,16 +1,17 @@
 const ul = document.querySelector(".con .mainUl");
 
-let i = 1;
 
 let database = [];
 
-function bruh() {
-    var inputValue = document.getElementById("mainInput").value;
-    var li = document.createElement("LI");
-    var text1 = document.createTextNode(i + ". " + inputValue);
-    li.appendChild(text1);
-    ul.appendChild(li);
-    i++;
+const addData = (ev) =>{
+    ev.preventDefault();
+    let data = {
+        date : document.getElementById("mainInput").value,
+    }
+    database.push(data);
+    document.forms[0].reset();
+    localStorage.setItem('databaseList',JSON.stringify(database));
 }
-
-console.log("ZANGISANGISANGIAGNAI");
+document.addEventListener('DOMContentLoaded',()=>{
+    document.getElementById("btn").addEventListener('click',addData);
+});
