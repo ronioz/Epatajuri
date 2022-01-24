@@ -27,9 +27,16 @@
     box-shadow: 0px 0px 15px 0px rgb(63, 0, 0);
 }
 
-.con p {
-    color: #cc2b5e;
-    font-size: 36px;
+.con a {
+    font-size: 54px;
+    text-decoration: none;
+    padding: 20px 30px;
+    transition: .5s;
+    border-radius: 20px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(120deg, #cc2b5e, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .con .mainUl {
@@ -62,10 +69,12 @@
     background: transparent;
     transition: .1s;
     border: none;
-    border-bottom: 1px solid #cc2b5e;
+    border-bottom: 1px solid#cc2b5e;
     font-size: 24px;
     cursor: pointer;
     color: #cc2b5e;
+    text-align: center;
+    width: 40%;
 }
 
 ::placeholder {
@@ -75,4 +84,13 @@
 
 .con #mainInput:focus {
     outline: none;
+}
+
+.con #ttP:hover {
+    background-color: green;
+    border-color: green;
+}
+
+.con #ttP {
+    display: none;
 }
