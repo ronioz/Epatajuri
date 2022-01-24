@@ -34,9 +34,11 @@
     transition: .5s;
     border-radius: 20px;
     font-size: 72px;
-    background: -webkit-linear-gradient(120deg, #cc2b5e, #333);
+    background: -webkit-linear-gradient(180deg,#cc2b5e,#753a88,#cc2b5e);
+    background-size: 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: animate 8s linear infinite;
 }
 
 .con .mainUl {
@@ -93,4 +95,13 @@
 
 .con #ttP {
     display: none;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
 }
